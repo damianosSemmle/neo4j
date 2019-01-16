@@ -585,7 +585,7 @@ public class GBPTree<KEY,VALUE> implements Closeable
         }
         catch ( IllegalStateException e )
         {
-            throw new MetadataMismatchException( "Index is not fully initialized since it's missing the meta page", e );
+            throw new MetadataMismatchException( "Index is not fully initialized since it's missing the meta page" );
         }
         finally
         {
@@ -772,7 +772,7 @@ public class GBPTree<KEY,VALUE> implements Closeable
         }
         catch ( IllegalStateException e )
         {
-            throw new MetadataMismatchException( "Index is not fully initialized since it's missing state pages", e );
+            throw new MetadataMismatchException( "Index is not fully initialized since it's missing state pages" );
         }
     }
 

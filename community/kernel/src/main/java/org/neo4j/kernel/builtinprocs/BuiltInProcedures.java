@@ -162,7 +162,7 @@ public class BuiltInProcedures
                 catch ( IndexNotFoundKernelException e )
                 {
                     throw new ProcedureException( Status.Schema.IndexNotFound, e,
-                            "No index on ", index.userDescription( tokens ) );
+                            "No index on %s", index.userDescription( tokens ) );
                 }
             }
             return result.stream();

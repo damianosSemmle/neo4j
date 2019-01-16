@@ -88,7 +88,7 @@ class TreeNodeFixedSize<KEY,VALUE> extends TreeNode<KEY,VALUE>
         }
         if ( leafMaxKeyCount < 2 )
         {
-            throw new MetadataMismatchException( "A page size of %d would only fit leaf keys, minimum is 2",
+            throw new MetadataMismatchException( "A page size of %d would only fit %d leaf keys, minimum is 2",
                     pageSize, leafMaxKeyCount );
         }
     }

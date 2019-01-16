@@ -85,7 +85,7 @@ public class SnapshotExecutionEngine extends ExecutionEngine
             if ( dirtySnapshot && result.getQueryStatistics().containsUpdates() )
             {
                 return throwQueryExecutionException(
-                        "Unable to get clean data snapshot for query '%s' that perform updates.", query, attempt );
+                        "Unable to get clean data snapshot for query '%s' that perform updates.", query );
             }
         }
         while ( dirtySnapshot );
